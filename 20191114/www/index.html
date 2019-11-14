@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+    </head>
+    <body >
+      <form align="center" > <font size="5">
+      姓名:<input type="text" name= "fname"><p>
+      信箱:<input type="email" name= "lname"><p>
+在哪裡得知我們?<select >
+　    <option value="1">網路</option>
+　    <option value="2">傳單</option>
+　    <option value="3">廣告</option>
+　    <option value="4">親友介紹</option><p>
+</select>
+      
+<p>是否再度光臨?</p>
+<input type="radio" name="location" value="yes">會
+<input type="radio" name="location" value="no">不會
+<input type="radio" name="location" value="maybe">或許<p>
+<br>寶貴意見:</br>
+<textarea name="cols="2"row="3"">
+</textarea><p>
+<input type="checkbox" name="vehicle1" value="check"> 是否訂閱最新消息?<br>
+服務滿意度:(1~10)
+<input id="number" type="number" step="1" min="0" max="10" value="10"><p>
+       <input type="submit">
+      </form> </font>
+    </body>
+</html>
